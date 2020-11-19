@@ -1,3 +1,25 @@
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:left;
+  margin: 5rem;
+}
+
+.title h1{
+  letter-spacing: 0.1em;
+	font-size: 5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -6,7 +28,7 @@
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
-  margin-top: 10rem;
+
 }
 
 .container .img-frame{
@@ -33,9 +55,39 @@
 }
 
 
-h1 {
-    margin-bottom: 3rem;
+
+
+
+.project{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 2rem;
 }
+
+.project .box{
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.left {
+  flex: 1 1 60%;
+  display: flex;
+}
+
+.left img{
+  width:60%;
+
+}
+
+.right {
+  flex: 1 1 40%;
+  padding: 10px;
+}
+
+.right h3{
+  margin-top: 0;
+}
+
 
 
 @media (max-width:900px) {
@@ -65,6 +117,27 @@ h1 {
     }
 
 
+
+    .title{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align:center;
+      margin: 20px 2rem;
+      margin-top: 6rem;
+    }
+
+    .title   h1 {
+          margin-top: ;
+          margin-bottom: 0;
+          font-size: 45px;
+      }
+
+      .title   h3 {
+            font-size: 15px;
+        }
+
+
   .container .img-frame{
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
@@ -91,4 +164,25 @@ h1 {
         width: 100%;
     }
 
+    .project{
+      align-items: center;
+    }
+
+    .project .box{
+      flex-direction: column;
+      text-align: center;
+      width: 50%;
+    }
+
+    .project .left{
+      justify-content: center;
+    }
+
+    .project img{
+      width: 300px;
+    }
+
+    .project h3{
+      margin: 20px;
+    }
 }
