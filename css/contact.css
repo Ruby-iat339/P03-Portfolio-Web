@@ -1,5 +1,5 @@
 
-.container{
+.contact{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,25 +9,20 @@
 }
 
 
-.container p{
+.contact p{
   margin-top:0;
   font-size: 15px;
   flex: 1 1 33.3%;
 }
 
 
-.container h3{
+.contact h3{
   margin-bottom: 10px;
 }
 
 
-.container img{
-  width: 3rem;
-  height: 3rem;
-}
 
-
-.container .option{
+.contact .option{
     flex: 1 1 33.3%;
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +31,7 @@
 }
 
 
-.container .option .box{
+.contact .option .box{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,20 +40,27 @@
   margin: 100px;
 }
 
-.container .option h3:hover {
+
+.contact .option .box img{
+  width: 3rem;
+  height: 3rem;
+}
+
+
+.contact .option h3:hover {
 	color: #d9a411;
   opacity: 1;
 }
 
 @media (max-width: 600px){
-  .container{
+  .contact{
       margin: 0;
   }
-    .container .option{
+    .contact .option{
         flex-direction: column;
     }
 
-    .container .option .box{
+    .contact .option .box{
       margin: 0;
     }
 }
