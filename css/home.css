@@ -80,6 +80,9 @@ h1 {
 }
 
 .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 1 1 40%;
   padding: 10px;
 }
@@ -87,6 +90,8 @@ h1 {
 .right h3{
   margin-top: 0;
 }
+
+
 
 
 
