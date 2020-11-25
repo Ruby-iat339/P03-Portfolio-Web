@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>STYLE GUIDE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/responsive-nav.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/interaction.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Assistant:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <!-- =======Style guide Nav // -->
+    <nav class="sg-nav">
+
+        <!-- nav icon// -->
+        <label for="sg-hamburger">▼</label>
+        <input type="checkbox" id="sg-hamburger" />
+
+        <!-- nav menu// -->
+        <div class="nav-items">
+            <a href="#interactive_elements" class="nav-link ">Interactive Elements</a>
+            <a href="#text_elements" class="nav-link">Text Elements</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#biography" class="nav-link">Biography</a>
+            <a href="http://www.sfu.ca/~lanyukew/IAT339/Final-project---profile/template.html" class="nav-link">Template</a>
+        </div>
+
+    </nav>
+
+
+
+    <h1 class="sg-title">STYLE GUIDE</h1>
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements" class="interactive_elements">
+        <h2 class="section-title">INTERACTIVE ELEMENTS</h2>
+
+
+
+        <!-- Default In-Text Link styling section -->
+        <section class="container">
+            <h3 class="type-title">IN-TEXT LINK:</h3>
+
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.in-text-link</p>
+            </div>
+
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="in-text-link"&gt;In-Text Link&lt;/a&gt;</code>
+            </div>
+
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                  ligula eget dolor. Aenean massa.   <a class="in-text-link" href="#">In-Text Link</a>
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                  Donec quam felis, ultricies nec, pellentesque.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- Default Button styling section -->
+        <section class="container">
+
+            <h3 class="type-title">NAVIGATION LINK:</h3>
+
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.nav-link</p>
+            </div>
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="nav-link"&gt;Navigation&lt;/a&gt;</code>
+            </div>
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <a class="nav-link" href="#">Navigation</a>
+            </div>
+
+        </section>
+
+        <!-- Default Submit/Reset Button styling section -->
+        <section class="container">
+            <h3 class="type-title">SUBMIT AND RESET BUTTON:</h3>
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.submit-reset</p>
+            </div>
+
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;input type="submit"&gt;</code><br>
+                <code>&lt;input type="reset"&gt;</code>
+            </div>
+
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <input type="submit" class="submit-reset" value="Submit">
+                <input type="reset" class="submit-reset" value="Reset">
+            </div>
+        </section>
+
+        <!-- Default text input styling section -->
+        <section class="container">
+            <h3 class="type-title">TEXT INPUT FIELD AND A LABEL:</h3>
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.text-input</p>
+            </div>
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;input type="text" id="text" name="text"&gt;</code><br>
+                <code>&lt;label for="text"&gt;Label&lt;/label&gt;</code>
+            </div>
+
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <form class="text-input">
+                    <input type="text" id="text" name="text" required>
+                    <label for="text">Label</label>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Default Image Link styling section -->
+        <section class="container">
+            <h3 class="type-title">IMAGE LINK:</h3>
+            <div class="box1">
+                <h4>CSS selector:</h4>
+                <p>.image-link</p>
+            </div>
+            <div class="box2">
+                <h4>Sample code:</h4>
+                <code>&lt;a href="#" class="image-link"&gt;&lt;img source="image.png" alt="a image"&gt;&lt;/a&gt;</code>
+            </div>
+            <div class="box3">
+                <h4>Rendered element:</h4>
+                <a href="#" class="img-link">
+                    <div class="img-frame">
+                        <img src="./img/bio.png" alt="image">
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements" class="text_elements">
+        <h2 class="section-title">TEXT ELEMENTS</h2>
+
+        <section class="container">
+            <h3 class="type-title">HEADINGS:</h3>
+            <div class="code-box">
+                <h4 class="code-render-title">Sample code:</h4>
+                <div class="code-background">
+                    <code>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>
+                        &lt;h2&gt;Heading 2&lt;/h2&gt;<br>
+                        &lt;h3&gt;Heading 3&lt;/h3&gt;<br>
+                        &lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+                </div>
+            </div>
+
+            <div class="element-box">
+                <h4 class="code-render-title">Rendered element:</h4>
+                <div class="sample-heading">
+                    <h1>Heading1</h1>
+                    <h2>Heading2</h2>
+                    <h3>Heading3</h3>
+                    <h4>Heading4</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- paragraph SECTION // -->
+        <section class="container">
+            <h3 class="type-title">PARAGRAPHS:</h3>
+            <div class="code-box">
+                <h4 class="code-render-title">Sample code:</h4>
+
+                <div class="code-background">
+                    <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                        pellentesque eu, pretium quis, sem. &lt;/p&gt;</code>
+                </div>
+
+            </div>
+            <div class="element-box sample-paragraph">
+                <h4 class="code-render-title">Rendered element:</h4>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem.
+                </p>
+            </div>
+        </section>
+
+        <!-- numbered list SECTION // -->
+        <section class="container">
+            <h3 class="type-title">NUMBERED LISTS:</h3>
+            <div class="code-box">
+                <h4 class="code-render-title">Sample code:</h4>
+
+                <div class="code-background">
+                    <code>&lt;ol type="1"&gt;<br>
+                        &lt;li&gt;item1&lt;/li&gt;<br>
+                        &lt;li&gt;item2&lt;/li&gt;<br>
+                        &lt;li&gt;item3&lt;/li&gt;<br>
+                        &lt;/ol&gt;</code>
+                </div>
+            </div>
+            <div class="element-box">
+                <h4 class="code-render-title">Rendered element:</h4>
+                <ol type="1">
+                    <li>item1</li>
+                    <li>item2</li>
+                    <li>item3</li>
+                </ol>
+            </div>
+        </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <section id="assemble" class="assemble_elements">
+
+        <h2 class="section-title">OTHER</h2>
+
+
+        <section class="container color-platte">
+            <h3>Color Platte</h3>
+            <img src="./img/platte.png" alt="platte">
+        </section>
+
+
+
+        <section class="container footer">
+            <h3 class="type-title">Footer</h3>
+
+            <footer>
+                <p>phone: 778-317-2214 | email: lanyukew@sfu.ca</p>
+
+                <div class="iconBox">
+                    <a href="#" class="img-link"><img src="./img/facebook.png" alt="facebook"></a>
+                    <a href="#" class="img-link"><img src="./img/twitter.png" alt="twitter"></a>
+                    <a href="#" class="img-link"><img src="./img/ins.png" alt="instagram"></a>
+                </div>
+
+                <div class="linkBox">
+                  <a href="http://www.sfu.ca/~lanyukew/IAT339/Final-project---profile/styleguide.html">Style Guide</a>
+                  <a href="http://www.sfu.ca/~lanyukew/IAT339/Final-project---profile/citation.html">Citation</a>
+                  <a href="http://www.sfu.ca/~lanyukew/IAT339/Final-project---profile/home.html">Profile</a>
+                </div>
+            </footer>
+
+        </section>
+
+    </section>
+
+
+
+      <!-- PROJECT // -->
+      <section id="projects" class="text_elements">
+          <h2 class="section-title">PROJECTS</h2>
+
+          <section class="container">
+              <h3 class="type-title">PROJECT1: LOGO DESIGN</h3>
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP1: Research</h4>
+
+                <p>In order to better understand to design the appropriate logo for the company,
+                  I first did the researches about company and its target audience.</p>
+                </div>
+
+              <div class="element-box">
+
+                  <div class="sample-heading">
+
+                  </div>
+              </div>
+
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP2: Brainstorme</h4>
+
+                <p>Based on the data from the research, I started brainstorming and write down
+                  all the design elements and keywords associated with it, and pick up the most
+                  relevant words of the company's intentio.Finally did a quick sketch to take
+                  down the ideas.</p>
+                </div>
+
+              <div class="element-box">
+                <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+                    <img src="./img/project1/1.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP3: Sketches & Draw on illustrator</h4>
+
+                <p>In this step, based on the previously selected design elements, I began to conceive
+                  and sketch as many sketch version as possible and pick up the most competitive logos
+                  and to draw with illustrator.</p>
+                </div>
+
+              <div class="element-box">
+                <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+                    <img src="./img/project1/2.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP4: Refined version</h4>
+
+                <p>Choose the best one from the previously works on illustrator according to the display
+                result on screen. Did more version with different colors.</p>
+                </div>
+
+              <div class="element-box">
+                <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+                    <img src="./img/project1/3.jpg" alt="platte" class="project_img">
+                    <img src="./img/project1/4.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP5: Application</h4>
+                <p>Use Photoshop to apply logo on physical objects, and show the physical visual result to
+                  the company.</p>
+                </div>
+
+              <div class="element-box">
+                <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+                    <img src="./img/project1/5.jpg" alt="platte" class="project_img">
+                    <img src="./img/project1/6.jpg" alt="platte" class="project_img">
+                    <img src="./img/project1/7.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+          </section>
+
+
+
+
+          <section class="container">
+              <h3 class="type-title">PROJECT2: MAGAZINE DESIGN</h3>
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP1: Research</h4>
+
+                <p>As the common process of graphic design,  I first did the researches about
+                  the magazine. The research focus on the field it applaied to and its target
+                  audience to help me conceive the appropriate design elements.</p>
+                </div>
+
+              <div class="element-box">
+                  <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+                    <img src="./img/project2/1.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP2: Layout research</h4>
+
+                <p>In order to apply the magazine design style to the current popular trends,
+                I did research about the layout of relevant magazines.</p>
+                </div>
+
+              <div class="element-box">
+                <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+                    <img src="./img/project2/2.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP3: brainstorm</h4>
+
+                <p>Based on my understanding of the theme of magazine and related researches, I
+                  started to do brainstorm and draw as many draft layouts as possible.</p>
+                </div>
+
+              <div class="element-box">
+                <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+                    <img src="./img/project2/3.jpg" alt="platte" class="project_img">
+                    <img src="./img/project2/4.jpg" alt="platte" class="project_img">
+                    <img src="./img/project2/5.jpg" alt="platte" class="project_img">
+                    <img src="./img/project2/6.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP4: Element design</h4>
+
+                <p>Creature elements with illustrator accroding to the previous design sketch and
+                  consider of the color plate applied to the magazine.</p>
+                </div>
+
+              <div class="element-box">
+                <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+                    <img src="./img/project2/7.jpg" alt="platte" class="project_img">
+                    <img src="./img/project2/8.jpg" alt="platte" class="project_img">
+                    <img src="./img/project2/9.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP5: Layout arrangement with InDesign</h4>
+                <p>Use InDesign to arrange the overall context on the magazine with grid and margin.</p>
+                </div>
+
+              <div class="element-box">
+                <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+                    <img src="./img/project2/10.jpg" alt="platte" class="project_img">
+                    <img src="./img/project2/11.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+
+              <div class="code-box">
+                  <h4 class="code-render-title">STEP6: Final version</h4>
+                <p>Finish the final version of magazine and refined it. Create a cover page for the magazine. </p>
+                </div>
+
+              <div class="element-box">
+                <h4 class="code-render-title">Display</h4>
+                  <div class="sample-heading">
+
+                    <img src="./img/project2/13.jpg" alt="platte" class="project_img">
+                    <img src="./img/project2/14.jpg" alt="platte" class="project_img">
+                    <img src="./img/project2/12.jpg" alt="platte" class="project_img">
+                  </div>
+              </div>
+
+
+          </section>
+      </section>
+
+
+
+
+      <!-- BIO // -->
+      <section id="biography" class="text_elements">
+          <h2 class="section-title">BIOGRAPHY</h2>
+
+          <section class="container">
+              <div class="code-box">
+                <h4 class="code-render-title">LANYUKE WANG</h4>
+                <a href="#" class="img-link">
+                    <div class="img-frame">
+                        <img src="./img/bio.png" alt="image">
+                    </div>
+                </a>
+
+              </div>
+
+              <div class="element-box">
+                  <h4 class="code-render-title">Brand design | Graphic Designer</h4>
+                <p>I am a third year student at Simon Fraser University majoring in SIAT.
+                  I am a open-minded designer and a proactive learner who has good skills
+                  of solving problems, well design thinking and a keen insight for the
+                  current popular design trend. I am good at various graphic design software,
+                  such as illustrator, Photoshop and InDesign. My work mainly focus on the
+                  visual experience and UI design. I aim to put the interests and visual
+                  experience of users and audience at first for providing customers with a
+                  satisfactory project.</p>
+              </div>
+          </section>
+      </section>
+      <!-- // BIO -->
+
+
+    <section id="citations" class="citation container">
+        <h3 class="type-title">Citations</h3>
+
+        <ul>
+            <li>Font: https://www.w3.org/Style/Examples/007/fonts.en.html</li>
+            <li>CSS Skill: https://www.w3schools.com/tags/tag_input.asp</li>
+            <li>Responsive Basic: https://web.dev/responsive-web-design-basics/#set-the-viewport</li>
+            <li>Flexbox Guide: https://css-tricks.com/snippets/css/a-guide-to-flexbox/</li>
+        </ul>
+
+    </section>
+
+
+
+</body></html>
