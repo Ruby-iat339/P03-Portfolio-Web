@@ -33,7 +33,6 @@
     color: black;
     font-size: 15px;
     flex: 1 1 50%;
-
 }
 
 
@@ -189,26 +188,28 @@
     .element-box {
         flex: 1 1 100%;
         width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-
+        text-align: center;
     }
 
     .code-box {
         flex: 1 1 100%;
         width: 100%;
-        padding-left: 0;
-        padding-right: 0;
+        text-align: center;
     }
 
     .combined_elements .submit-reset {
         width: 100%;
         opacity: 1;
         margin-top: 24px;
+
     }
 
     .type-title {
         margin-bottom: 0;
     }
 
+    .sample-heading {
+      justify-content: center;
+      align-items: center;
+    }
 }
