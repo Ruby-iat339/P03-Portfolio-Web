@@ -3,19 +3,47 @@ h1 {
     margin-bottom: 3rem;
 }
 
-.title{
+.title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align:left;
   margin: 5rem;
+  margin-bottom: 2rem;:
 }
-
 .title h1{
   letter-spacing: 0.1em;
-	font-size: 5rem;
-  margin-top: 0;
-  margin-bottom: 0;
+ 	font-size: 5rem;
+   margin-top: 0;
+   margin-bottom: 0;
+  text-transform: uppercase;
+}
+.title h3{
+   margin-top: 60px;
+}
+.title-wrap span {
+	display: flex;
+	flex-direction: column;
+}
+
+.title span.sp-top {
+	animation: fadeIn 0.5s ease-in 0.5s backwards;
+}
+.title span.sp-mid {
+	animation: fadeIn 0.5s ease-in 1s backwards;
+}
+.title span.sp-bottom {
+	animation: fadeIn 0.5s ease-in 1.5s backwards;
+}
+
+/*title animation*/
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
 }
 
 
@@ -144,25 +172,25 @@ h1 {
     }
 
 
-
-    .title{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align:center;
-      margin: 20px 2rem;
-      margin-top: 6rem;
-    }
-
-    .title   h1 {
-          margin-top: ;
-          margin-bottom: 0;
-          font-size: 45px;
+      .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align:center;
+        margin: 20px 2rem;
+        margin-top: 6rem;
       }
 
-      .title   h3 {
-            font-size: 15px;
+      .title   h1 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 45px;
         }
+
+        .title   h3 {
+             margin-top: 30px;
+              font-size: 15px;
+          }
 
 
   .container .img-frame{
