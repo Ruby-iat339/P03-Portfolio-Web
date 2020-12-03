@@ -1,0 +1,60 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 100px;
+  p {
+    margin-top: 0;
+    font-size: 15px;
+    flex: 1 1 33.3%;
+  }
+  h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  .option {
+    flex: 1 1 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    background: white;
+    padding: 30px;
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+    h3 {
+      &:hover {
+        color: #d9a411;
+        opacity: 1;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .contact {
+    margin: 0;
+    .option {
+      flex-direction: column;
+      .box {
+        margin: 0;
+      }
+    }
+  }
+}

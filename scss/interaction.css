@@ -1,0 +1,259 @@
+/*=======INPUT INTERACTION==========
+This effect is design by myself based on the tutorial
+from https://css-tricks.com/float-labels-css/
+*/
+/* =======IMAGE LINK ELEMENTS===========
+  Based on tutorial from https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+*/
+/* Styling for the in-text button */
+/*Navigation link styling*/
+/* navigation bar */
+/* Hide Hamburger */
+/* Horizontal Menu Items */
+/*submit reset button style*/
+/*navigation for style guide*/
+/*
+footer
+*/
+.text-input {
+	position: relative;
+	margin-top: 30px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+	label {
+		cursor: pointer;
+		position: absolute;
+		left: 10px;
+		top: 5px;
+		transition: 0.6s;
+		opacity: .6;
+		font-style: italic;
+	}
+	input {
+		width: 100%;
+		height: 30px;
+		margin-bottom: 0;
+		border: none;
+		outline: none;
+		background-color: transparent;
+		border-bottom: 1px solid black;
+		&:hover {
+			opacity: 1;
+			+ {
+				label {
+					transform: scale(1.2);
+				}
+			}
+		}
+		&:focus {
+			opacity: 1;
+			+ {
+				label {
+					top: -15px;
+					left: -5px;
+					transform: scale(0.9);
+					opacity: .6;
+				}
+			}
+		}
+		&:valid {
+			color: rgb(0);
+			background-color: rgb(255);
+			+ {
+				label {
+					top: -15px;
+					left: -5px;
+					transform: scale(0.9);
+					opacity: .6;
+				}
+			}
+		}
+	}
+}
+.img-frame {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+}
+.img-link {
+	img {
+		width: 200px;
+		height: 200px;
+		transition: .7s ease;
+		&:hover {
+			transform: scale(1.2);
+		}
+	}
+}
+.in-text-link {
+	color: #d9a411;
+	&:hover {
+		color: white;
+		background-color: #d9a411;
+		text-decoration: none;
+	}
+	&:focus {
+		background-color: black;
+		color: white;
+		opacity: 1;
+	}
+}
+.nav-link {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: black;
+	opacity: .5;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	transition: .3s ease;
+	&:hover {
+		border-radius: 20px;
+		opacity: 1;
+		background: linear-gradient(to top,white, 30%, rgb(255, 236, 168));
+		color: #9c644c;
+		box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+	}
+}
+nav {
+	padding: 10px;
+	border-radius: 20px;
+	width: 100%;
+	background: rgb(255, 236, 168);
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	label {
+		display: none;
+	}
+}
+#hamburger {
+	display: none;
+}
+#sg-hamburger {
+	display: none;
+}
+.nav-items {
+	display: flex;
+	justify-content: flex-end;
+	a {
+		width: 90px;
+		padding: 10px;
+		font-weight: 500;
+		text-decoration: none;
+		text-align: center;
+		font-size: 18px;
+	}
+}
+.submit-reset {
+	border: none;
+	background-color: rgb(255, 236, 168);
+	color: #653315;
+	width: 90px;
+	height: 40px;
+	font-size: 18px;
+	opacity: .7;
+	margin-right: 1.2rem;
+	transition: .5s ease;
+	&:hover {
+		opacity: 1;
+	}
+}
+.nav-guide {
+	margin-bottom: 60px;
+	display: flex;
+	flex: 1 1 20%;
+	flex-wrap: wrap;
+	justify-content: center;
+	a {
+		border: none;
+		&:hover {
+			border: none;
+		}
+	}
+}
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: rgb(255, 236, 168);
+	width: 100%;
+	margin-top: 30px;
+	p {
+		font-size: 15px;
+		flex: 1 1 33.3%;
+	}
+	.iconBox {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 1 1 33.3%;
+		justify-content: center;
+		img {
+			width: 20px;
+			height: 20px;
+			margin: 0.5em;
+			margin-bottom: 20px;
+		}
+	}
+	.linkBox {
+		flex: 1 1 33.3%;
+		display: flex;
+		margin-bottom: 20px;
+		a {
+			text-decoration: none;
+			color: black;
+			padding: 0.5rem;
+			padding-bottom: 0;
+			opacity: .5;
+			&:hover {
+				color: #d9a411;
+				opacity: 1;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	nav {
+		label {
+			display: inline-block;
+			color: saddlebrown;
+			background: transparent;
+			font-size: 1.2em;
+			padding: 10px;
+			float: right;
+		}
+		input {
+			&:checked {
+				~ {
+					.nav-items {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	.nav-items {
+		a {
+			box-sizing: border-box;
+			display: block;
+			width: 100%;
+		}
+		display: none;
+		margin-top: 40px;
+	}
+	.sg-nav {
+		.nav-items {
+			height: auto;
+		}
+	}
+}
+@media (max-width: 600px) {
+	footer {
+		.linkBox {
+			flex-direction: column;
+		}
+	}
+}
