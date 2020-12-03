@@ -184,25 +184,6 @@ from https://css-tricks.com/float-labels-css/
 
 
 
-.button {
-    border: none;
-    border:solid;
-    border-color: rgb(255, 210, 0);
-    color: #653315;
-    font-size: 18px;
-    margin-top: 2rem;
-    padding: 0.5rem;
-    transition: .5s ease;
-    text-decoration: none;
-}
-
-.button:hover {
-    opacity: 1;
-    background-color: rgb(255, 236, 168);
-    color: #653315;
-}
-
-
 /*
 footer
 */

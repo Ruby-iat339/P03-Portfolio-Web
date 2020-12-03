@@ -83,44 +83,6 @@ h1 {
 }
 
 
-
-
-
-.project{
-  display: flex;
-  flex-direction: column;
-  margin: 20px 2rem;
-}
-
-.project .box{
-  display: flex;
-  margin-bottom: 5%;
-}
-
-.left {
-  flex: 1 1 60%;
-  display: flex;
-}
-
-.left img{
-  width:60%;
-
-}
-
-.right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 1 1 40%;
-  padding: 10px;
-}
-
-.right h3{
-  margin-top: 0;
-}
-
-
-
 .interest{
   display: flex;
   flex-wrap: wrap;
@@ -129,6 +91,70 @@ h1 {
 .interest .box{
   margin-right: 5%;
 }
+
+
+
+
+
+
+.project{
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 20px 2rem;
+    border-radius: 10px;
+    background:  rgb(255, 236, 168);
+}
+
+.project a{
+  text-decoration:none
+}
+
+.project .card{
+    margin: 50px;
+    margin-top: 100px;
+    position: relative;
+    max-width: 400px;
+    height: auto;
+    background: #fff;
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    transition: .5s ease-in-out;
+}
+
+.project .card:hover{
+ transform: scale(1.1);
+}
+
+.project .card .imgBx{
+    position: relative;
+    width: 300px;
+    height: auto;
+    top: -60px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.project .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.project .card .content{
+    position: relative;
+    top: -15px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+}
+
+
 
 
 
@@ -220,24 +246,36 @@ h1 {
     }
 
     .project{
+      flex-direction: column;
+      justify-content: center;
       align-items: center;
     }
 
-    .project .box{
-      flex-direction: column;
-      text-align: center;
-      width: 50%;
-    }
 
-    .project .left{
-      justify-content: center;
+    .project .card{
+        margin: 0;
+        margin-top: 100px;
     }
+}
 
-    .project img{
-      width: 300px;
-    }
 
-    .project h3{
-      margin: 20px;
-    }
+@media (max-width:500px){
+  .project{
+    background: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+
+
+  .project .card .imgBx{
+      width: 100%;
+      height: auto;
+  }
+
+  .project .card .content{
+      padding:0;
+  }
+
+
 }
