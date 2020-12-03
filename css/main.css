@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
 p {
     font-family: 'PT Sans', sans-serif;
     font-size: 1.5vw;
