@@ -20,6 +20,9 @@
   font-size: 1.2rem;
 }
 
+.contact a{
+  text-decoration: none;
+}
 
 
 .contact .option{
